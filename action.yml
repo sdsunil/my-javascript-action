@@ -1,19 +1,18 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  numOctocats:
+    description: 'Number of Octocats'
     required: true
-    default: 'World'
-  who-to-greettwo:  # id of input
-    description: 'Who to greettwo'
+    default: '1'
+  octocatEyeColor:
+    description: 'Eye color of the Octocats'
     required: true
-    default: 'Worldtwo'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-  time2: # id of output
-    description: 'The time we greeted youtwo'
+  newoutpur: # id of output
+    description: 'The new output'
 
 runs:
   using: 'node12'
