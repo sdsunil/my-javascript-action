@@ -9,6 +9,18 @@ jobs:
       id: hello
       uses: sdsunil/my-javascript-action@v1
       with:
+        who-to-greet: 'Sunil'
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+  hello_world_jobtwo:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+    - name: Hello world action step
+      id: hello
+      uses: sdsunil/my-javascript-action@v1
+      with:
         numOctocats: 'Sunil'
         octocatEyeColor: 'Sunil2'
     # Use the output from the `hello` step
