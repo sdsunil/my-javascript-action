@@ -5,15 +5,15 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-  who-to-greet2:  # id of input
-    description: 'Who to greet2'
+  who-to-greettwo:  # id of input
+    description: 'Who to greettwo'
     required: true
-    default: 'World2'
+    default: 'Worldtwo'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
   time2: # id of output
-    description: 'The time we greeted you22222'
+    description: 'The time we greeted youtwo'
 
 runs:
   using: 'node12'
