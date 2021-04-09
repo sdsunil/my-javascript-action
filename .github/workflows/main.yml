@@ -10,8 +10,9 @@ jobs:
       uses: sdsunil/my-javascript-action@v1
       with:
         who-to-greet: 'Sunil'
+        who-to-greet2: 'Sunil2'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
-    - name: Get the output time
+    - name: Get the output time2
       run: echo "The timekjkfjkdsjfkjksajflkj was ${{ steps.hello.outputs.time2 }}"

@@ -5,11 +5,16 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  who-to-greet2:  # id of input
+    description: 'Who to greet2'
+    required: true
+    default: 'World2'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-  time2:
-    description: 'The time we greeted you2222'
+  time2: # id of output
+    description: 'The time we greeted you22222'
+
 runs:
   using: 'node12'
   main: 'index.js'
